@@ -1,9 +1,6 @@
-#!/usr/bin/env python3
-
 import click
 import toxic
 import os
-
 
 @click.command()
 @click.option("-s", "--secret", type=str)

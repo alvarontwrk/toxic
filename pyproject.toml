@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "toxic"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["alvaro <garciajaenalvaro@gmail.com>"]
 
@@ -16,4 +16,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-toxic = "toxic.app:main()"
+toxic = "toxic.app:main"
