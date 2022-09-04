@@ -23,8 +23,8 @@ def main(secret, timeout, pre, command, cert, key):
     if pid:
         toxic.serverapp.config["secret"] = secret
         if cert and key:
-            toxic.serverapp.run(ssl_context=(cert,key))
+            toxic.serverapp.run(host="0.0.0.0", ssl_context=(cert,key))
         else:
-            toxic.serverapp.run()
+            toxic.serverapp.run(host="0.0.0.0")
     else:
         toxic.handle_connection(timeout, command, pre)
